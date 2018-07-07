@@ -1,0 +1,1380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Login" customClass="ViewController" customModule="brewsCruise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyD-Fd-iBg">
+                                <rect key="frame" x="72" y="541" width="231" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="26"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SWd-3E-qMH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="j4c-g1-HRo">
+                                <rect key="frame" x="16" y="41" width="343" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mountains" translatesAutoresizingMaskIntoConstraints="NO" id="nKW-Mw-bjD">
+                                <rect key="frame" x="51" y="269" width="272" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46666666670000001" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="Cpg-dX-a4A" kind="show" identifier="loginSegue" id="9yd-zg-6u2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="31.934032983508249"/>
+        </scene>
+        <!--ABOUT-->
+        <scene sceneID="yeV-xB-ae0">
+            <objects>
+                <viewController id="Dox-rp-2zy" customClass="AboutViewController" customModule="brewsCruise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7gP-Uz-fR4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yp0-5M-nlv">
+                                <rect key="frame" x="16" y="94" width="343" height="1357"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLP-E1-Ogk">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="1357"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t25-x2-ey8">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="1357"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdx-dm-Opf">
+                                                        <rect key="frame" x="157" y="8" width="29" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIDDLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wK-Ww-h2E">
+                                                        <rect key="frame" x="140.5" y="668" width="62" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTOM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26L-6f-hxK">
+                                                        <rect key="frame" x="136" y="1328" width="71" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxh-Dd-qLe">
+                                                        <rect key="frame" x="8" y="55" width="327" height="279"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <string key="text">We are a team of Bellingham locals that have an absolute love for quality beer.  We think it is extremely important that locals and visitors to Bellingham have access to a tool that makes visiting all of the breweries in town a walk in the park, which is why we developed our app.  
+
+Living in Bellingham for the past decade has given our team the necessary information and experience to deliver a quality product.  Downloading our app gives you access to our combined knowledge of all of the beers in town.
+
+So sit back, crack a cold one, and welcome to Brews Cruise!</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5v-Or-1jV">
+                                                        <rect key="frame" x="11" y="8" width="321" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="35"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="2" height="2"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How It Works" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJk-lT-QNS">
+                                                        <rect key="frame" x="11" y="354" width="321" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="35"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="2" height="2"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="F.A.Q." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-Rf-qBM">
+                                                        <rect key="frame" x="11" y="689" width="321" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="35"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="2" height="2"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dB-Qd-l6b">
+                                                        <rect key="frame" x="8" y="402" width="327" height="279"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <string key="text">The Brews Cruise App makes it extremely easy to track down all of the fantastic breweries that Bellingham has to offer.  In order to add a brewery to your passport, all you have to do is take a picture of the QR code using the scanner in the app after you purchase a beer! 
+
+Asking a bartender for the QR code is crucial, since they will have them behind the bar.  Once you successfully scan the code, a stamp will show up in your passport and your done!
+
+Once you have collected all of the stamps, you are eligible to select one of our amazing prizes!</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMU-V0-dZj">
+                                                        <rect key="frame" x="11" y="737" width="327" height="279"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <string key="text">1) Here's a stupid question. -Here's an answer to that stupid question!
+
+2) Here's a stupid question. -Here's an answer to that stupid question!  3) Here's a stupid question. -Here's an answer to that stupid question!  4) Here's a stupid question. -Here's an answer to that stupid question!  5) Here's a stupid question. -Here's an answer to that stupid question!</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="26L-6f-hxK" secondAttribute="bottom" constant="8" id="0f9-57-mYE"/>
+                                                    <constraint firstItem="Xdx-dm-Opf" firstAttribute="top" secondItem="t25-x2-ey8" secondAttribute="top" constant="8" id="EjK-tQ-Sun"/>
+                                                    <constraint firstItem="Xdx-dm-Opf" firstAttribute="centerX" secondItem="t25-x2-ey8" secondAttribute="centerX" id="Jfh-9v-fQS"/>
+                                                    <constraint firstItem="26L-6f-hxK" firstAttribute="centerX" secondItem="t25-x2-ey8" secondAttribute="centerX" id="PXQ-Hk-u3Z"/>
+                                                    <constraint firstItem="26L-6f-hxK" firstAttribute="top" secondItem="9wK-Ww-h2E" secondAttribute="bottom" constant="639" id="ace-ui-lBr"/>
+                                                    <constraint firstItem="9wK-Ww-h2E" firstAttribute="centerX" secondItem="t25-x2-ey8" secondAttribute="centerX" id="fde-26-pLQ"/>
+                                                    <constraint firstItem="9wK-Ww-h2E" firstAttribute="top" secondItem="Xdx-dm-Opf" secondAttribute="bottom" constant="639" id="gZV-PD-9eI"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="t25-x2-ey8" secondAttribute="trailing" id="9hK-jM-edL"/>
+                                            <constraint firstAttribute="bottom" secondItem="t25-x2-ey8" secondAttribute="bottom" id="Ooo-8G-OtV"/>
+                                            <constraint firstItem="t25-x2-ey8" firstAttribute="leading" secondItem="TLP-E1-Ogk" secondAttribute="leading" id="PIC-7A-eJL"/>
+                                            <constraint firstItem="t25-x2-ey8" firstAttribute="width" secondItem="TLP-E1-Ogk" secondAttribute="width" id="Su3-xs-4A0"/>
+                                            <constraint firstItem="t25-x2-ey8" firstAttribute="height" secondItem="TLP-E1-Ogk" secondAttribute="height" priority="250" id="TE6-Lv-bnj"/>
+                                            <constraint firstItem="t25-x2-ey8" firstAttribute="top" secondItem="TLP-E1-Ogk" secondAttribute="top" id="Ygk-vD-XXY"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TLP-E1-Ogk" firstAttribute="top" secondItem="Yp0-5M-nlv" secondAttribute="top" id="Czl-hR-jsg"/>
+                                    <constraint firstItem="TLP-E1-Ogk" firstAttribute="leading" secondItem="Yp0-5M-nlv" secondAttribute="leading" id="NrB-Uq-2Dx"/>
+                                    <constraint firstAttribute="bottom" secondItem="TLP-E1-Ogk" secondAttribute="bottom" id="i5K-eB-fbi"/>
+                                    <constraint firstAttribute="trailing" secondItem="TLP-E1-Ogk" secondAttribute="trailing" id="rsy-J0-AEC"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sRl-SA-iJp">
+                                <rect key="frame" x="28" y="41" width="319" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="FWF-Ru-H3R"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46666666670000001" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yp0-5M-nlv" firstAttribute="top" secondItem="sRl-SA-iJp" secondAttribute="bottom" constant="8" id="P2O-k1-BEC"/>
+                            <constraint firstItem="wQj-z1-B3B" firstAttribute="trailing" secondItem="Yp0-5M-nlv" secondAttribute="trailing" constant="16" id="Rx9-Uu-jki"/>
+                            <constraint firstItem="wQj-z1-B3B" firstAttribute="trailing" secondItem="sRl-SA-iJp" secondAttribute="trailing" constant="28" id="WdY-0f-pkJ"/>
+                            <constraint firstItem="Yp0-5M-nlv" firstAttribute="leading" secondItem="wQj-z1-B3B" secondAttribute="leading" constant="16" id="YMN-95-O1D"/>
+                            <constraint firstItem="sRl-SA-iJp" firstAttribute="top" secondItem="wQj-z1-B3B" secondAttribute="top" constant="21" id="f04-4l-28a"/>
+                            <constraint firstItem="Yp0-5M-nlv" firstAttribute="bottom" secondItem="wQj-z1-B3B" secondAttribute="bottom" id="jVM-6I-7Yg"/>
+                            <constraint firstItem="sRl-SA-iJp" firstAttribute="leading" secondItem="wQj-z1-B3B" secondAttribute="leading" constant="28" id="mal-WW-h1f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wQj-z1-B3B"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ABOUT" image="about-2" id="zOc-Vf-JU8"/>
+                    <size key="freeformSize" width="375" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFZ-mT-59W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773.5999999999999" y="418.29085457271367"/>
+        </scene>
+        <!--SCANNER-->
+        <scene sceneID="yzF-bb-gpZ">
+            <objects>
+                <viewController id="Ych-hG-TTb" customClass="ScannerViewController" customModule="brewsCruise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AJn-12-mm6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="DlV-3c-8He">
+                                <rect key="frame" x="28" y="41" width="319" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZEg-WV-4ha">
+                                <rect key="frame" x="16" y="94" width="343" height="524"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scanner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um2-R2-PlX">
+                                        <rect key="frame" x="11" y="8" width="321" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="2" height="2"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46666666670000001" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="nM7-AB-PIp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SCANNER" image="define_location" id="oZK-vd-SZq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayI-bt-7pQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4328.8000000000002" y="44.527736131934034"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="6tc-Xx-hYp">
+            <objects>
+                <viewController id="Y82-w8-Fgo" userLabel="Menu" customClass="MenuViewController" customModule="brewsCruise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OcP-Mu-uea">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFN-at-ece">
+                                <rect key="frame" x="16" y="94" width="343" height="1357"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2V-qG-IlH">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="1357"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baG-ab-mBK" userLabel="Content view">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="1357"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMK-fZ-yRW">
+                                                        <rect key="frame" x="154.5" y="8" width="34" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTOM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUw-Et-pTt">
+                                                        <rect key="frame" x="136" y="1328" width="71" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIDDLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIe-Rx-vmX">
+                                                        <rect key="frame" x="140.5" y="668" width="62" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gruff" translatesAutoresizingMaskIntoConstraints="NO" id="B1F-4F-PFR">
+                                                        <rect key="frame" x="8" y="8" width="327" height="198"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qkm-DQ-pdI">
+                                                        <rect key="frame" x="179" y="8" width="156" height="198"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Featured Brewery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZK-cj-moR">
+                                                                <rect key="frame" x="8" y="8" width="144" height="18"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grufflogo" translatesAutoresizingMaskIntoConstraints="NO" id="mdy-ok-LQQ">
+                                                                <rect key="frame" x="37" y="39" width="83" height="81"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="0.54794520550000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upcoming Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zso-Lt-zHd">
+                                                        <rect key="frame" x="11" y="229" width="321" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="35"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="2" height="2"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dtsounds" translatesAutoresizingMaskIntoConstraints="NO" id="x4K-Uh-Bhf">
+                                                        <rect key="frame" x="11" y="277" width="97" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Downtown Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxF-hG-WB3">
+                                                        <rect key="frame" x="125" y="277" width="194" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ho-C8-Vwv">
+                                                        <rect key="frame" x="11" y="359" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Downtown Sounds started as a small gathering hosted in an alley, turning the underutilized space into something extraordinary. Downtown Sounds draws bands from across the country and folks from Whatcom County and beyond to share in their love of music. After over a decade of this beloved, award-winning, urban music festival, it is firmly cemented as Downtown Bellingham's hottest summer attraction</string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wednesdays in July" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="877-sg-gHe">
+                                                        <rect key="frame" x="155" y="308" width="135" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1310 Commercial Street" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2k-Lw-a57">
+                                                        <rect key="frame" x="142" y="333" width="160" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twinsisters" translatesAutoresizingMaskIntoConstraints="NO" id="Ohk-uw-COL">
+                                                        <rect key="frame" x="11" y="531" width="107" height="74"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Twin Sisters Opening" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI0-1E-1VL">
+                                                        <rect key="frame" x="118" y="531" width="209" height="22"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="19"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keq-In-CA3">
+                                                        <rect key="frame" x="11" y="613" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Twin Sisters Brewing Company is a story of enthusiasm, experience, and passion coming together to produce great beer, foster our community and enhance the beer culture in Bellingham. A couple years in the works, and thousands of hours of dedication, the brewery is finally projected to open on July 26th.  </string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="July 26th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg7-Qa-dVF">
+                                                        <rect key="frame" x="188" y="561" width="64" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="500 Carolina St" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D18-f7-O28">
+                                                        <rect key="frame" x="168" y="587" width="107" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="schweinlogo" translatesAutoresizingMaskIntoConstraints="NO" id="eEP-Ag-JZw">
+                                                        <rect key="frame" x="23" y="787" width="82" height="74"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHB-Q0-qJ4">
+                                                        <rect key="frame" x="11" y="869" width="324" height="155"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Bellingham's most popular biergarten is once again opening its doors for business!  After a full remodel with an additional bar, new bathrooms and a new stage for events and musicians, Schweinhaus is sure to keep the liters flowing all summer long.  </string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEW-Wa-zPj">
+                                                        <rect key="frame" x="141" y="974" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="websiteButton3:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="nOh-oF-EwF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Coming Soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqx-Hc-cRf">
+                                                        <rect key="frame" x="173" y="817" width="97" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1330 N State St" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyI-L6-DSG">
+                                                        <rect key="frame" x="168" y="843" width="103" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schweinhaus Re-Opens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAE-KQ-bKt">
+                                                        <rect key="frame" x="113" y="787" width="218" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OQo-bW-8Dm">
+                                                        <rect key="frame" x="11" y="1049" width="321" height="170"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Join our Mailing List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UL7-JQ-lao">
+                                                                <rect key="frame" x="36" y="8" width="248" height="27"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="23"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Never miss an update!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIR-v9-y6u">
+                                                                <rect key="frame" x="74" y="43" width="172" height="20"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                                <color key="textColor" red="0.75580980329949243" green="0.18480492145504604" blue="0.1008580666385638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Address" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a99-m7-ZDh">
+                                                                <rect key="frame" x="36" y="82" width="248" height="30"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yf-7l-2Wa">
+                                                                <rect key="frame" x="36" y="120" width="248" height="30"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" red="0.75580980330000003" green="0.1848049215" blue="0.1008580666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="Subscribe Now">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="0.70606806506849318" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rt-ef-HoX">
+                                                        <rect key="frame" x="141" y="747" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="websiteButton2:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="LEb-ad-APB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgp-TC-Sqz">
+                                                        <rect key="frame" x="141" y="491" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="ahO-qn-MAs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqy-Rs-PYu">
+                                                        <rect key="frame" x="69" y="1254" width="205" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.75580980330000003" green="0.1848049215" blue="0.1008580666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Logout">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="logoutButton:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="yql-iM-gel"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="DUw-Et-pTt" secondAttribute="bottom" constant="8" id="04M-Xg-0dr"/>
+                                                    <constraint firstItem="OMK-fZ-yRW" firstAttribute="top" secondItem="baG-ab-mBK" secondAttribute="top" constant="8" id="Vp2-Ly-KNW"/>
+                                                    <constraint firstItem="OMK-fZ-yRW" firstAttribute="centerX" secondItem="baG-ab-mBK" secondAttribute="centerX" id="XyC-4f-7Cc"/>
+                                                    <constraint firstItem="NIe-Rx-vmX" firstAttribute="top" secondItem="OMK-fZ-yRW" secondAttribute="bottom" constant="639" id="Z7B-NM-dfd"/>
+                                                    <constraint firstItem="DUw-Et-pTt" firstAttribute="top" secondItem="NIe-Rx-vmX" secondAttribute="bottom" constant="639" id="dCE-qM-cuA"/>
+                                                    <constraint firstItem="NIe-Rx-vmX" firstAttribute="centerX" secondItem="baG-ab-mBK" secondAttribute="centerX" id="ozV-qn-fQs"/>
+                                                    <constraint firstItem="DUw-Et-pTt" firstAttribute="centerX" secondItem="baG-ab-mBK" secondAttribute="centerX" id="yAD-xN-yuw"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="baG-ab-mBK" secondAttribute="trailing" id="4Ez-3H-wCB"/>
+                                            <constraint firstItem="baG-ab-mBK" firstAttribute="width" secondItem="S2V-qG-IlH" secondAttribute="width" id="IjP-eU-LNG"/>
+                                            <constraint firstAttribute="bottom" secondItem="baG-ab-mBK" secondAttribute="bottom" id="NIr-Ok-0Zn"/>
+                                            <constraint firstItem="baG-ab-mBK" firstAttribute="leading" secondItem="S2V-qG-IlH" secondAttribute="leading" id="ezC-Zs-lqH"/>
+                                            <constraint firstItem="baG-ab-mBK" firstAttribute="height" secondItem="S2V-qG-IlH" secondAttribute="height" priority="250" id="vRw-kg-SSM"/>
+                                            <constraint firstItem="baG-ab-mBK" firstAttribute="top" secondItem="S2V-qG-IlH" secondAttribute="top" id="ymq-SL-VWJ"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="S2V-qG-IlH" secondAttribute="trailing" id="DeX-Oc-7ci"/>
+                                    <constraint firstItem="S2V-qG-IlH" firstAttribute="leading" secondItem="QFN-at-ece" secondAttribute="leading" id="Hpw-Tm-ko3"/>
+                                    <constraint firstItem="S2V-qG-IlH" firstAttribute="top" secondItem="QFN-at-ece" secondAttribute="top" id="S0O-lc-xho"/>
+                                    <constraint firstAttribute="bottom" secondItem="S2V-qG-IlH" secondAttribute="bottom" id="pYO-ex-AbE"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Uhd-Mv-Gti">
+                                <rect key="frame" x="28" y="41" width="319" height="45"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46666666670000001" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KPd-ii-l9r" firstAttribute="trailing" secondItem="Uhd-Mv-Gti" secondAttribute="trailing" constant="28" id="CHb-kB-MFW"/>
+                            <constraint firstItem="KPd-ii-l9r" firstAttribute="trailing" secondItem="QFN-at-ece" secondAttribute="trailing" constant="16" id="Doe-JX-C7y"/>
+                            <constraint firstItem="QFN-at-ece" firstAttribute="top" secondItem="Uhd-Mv-Gti" secondAttribute="bottom" constant="8" id="KIO-KZ-svZ"/>
+                            <constraint firstItem="Uhd-Mv-Gti" firstAttribute="leading" secondItem="KPd-ii-l9r" secondAttribute="leading" constant="28" id="QbO-9a-gY7"/>
+                            <constraint firstItem="QFN-at-ece" firstAttribute="bottom" secondItem="KPd-ii-l9r" secondAttribute="bottom" id="TsI-DR-pBq"/>
+                            <constraint firstItem="Uhd-Mv-Gti" firstAttribute="top" secondItem="KPd-ii-l9r" secondAttribute="top" constant="21" id="cFz-6G-Z4P"/>
+                            <constraint firstItem="QFN-at-ece" firstAttribute="leading" secondItem="KPd-ii-l9r" secondAttribute="leading" constant="16" id="mTq-PD-GjF"/>
+                            <constraint firstItem="QFN-at-ece" firstAttribute="top" secondItem="KPd-ii-l9r" secondAttribute="top" constant="74" id="rcx-hN-hm9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KPd-ii-l9r"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="HOME" image="home-1" id="xPl-RW-28O"/>
+                    <size key="freeformSize" width="375" height="1500"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="logoutSegue" id="dIM-al-VVx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qcv-Qb-Tjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933.5999999999999" y="419.19040479760122"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="94E-Oi-E9T">
+            <objects>
+                <tabBarController id="Cpg-dX-a4A" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="Aux-ch-gtV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.75580980330000003" green="0.1848049215" blue="0.1008580666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y82-w8-Fgo" kind="relationship" relationship="viewControllers" id="2HE-pu-iCW"/>
+                        <segue destination="qR8-Le-DhX" kind="relationship" relationship="viewControllers" id="kjQ-Tf-3ml"/>
+                        <segue destination="Ych-hG-TTb" kind="relationship" relationship="viewControllers" id="phC-TZ-MFF"/>
+                        <segue destination="Uwt-I9-hF9" kind="relationship" relationship="viewControllers" id="GYr-VV-U3s"/>
+                        <segue destination="wPB-mN-3dg" kind="relationship" relationship="viewControllers" id="LmQ-1c-dIf"/>
+                        <segue destination="Dox-rp-2zy" kind="relationship" relationship="viewControllers" id="eta-pc-EPr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxa-8o-UlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="46"/>
+        </scene>
+        <!--BREWS-->
+        <scene sceneID="rlx-Z1-p97">
+            <objects>
+                <viewController id="qR8-Le-DhX" customClass="BreweriesViewController" customModule="brewsCruise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q3r-Nu-YqW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lA5-yw-HzX">
+                                <rect key="frame" x="28" y="42" width="319" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="uQx-A5-b8V"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Yt-FD-kdH">
+                                <rect key="frame" x="16" y="95" width="343" height="2656"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5H-Tc-fqI">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="2656"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0K8-eT-hom" userLabel="ContentView">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="2656"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uez-fg-bvi">
+                                                        <rect key="frame" x="154.5" y="8" width="34" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIDDLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCV-YE-BlP">
+                                                        <rect key="frame" x="140" y="1318" width="62" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTOM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbB-g9-gUb">
+                                                        <rect key="frame" x="136" y="2627" width="71" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aslanlogo" translatesAutoresizingMaskIntoConstraints="NO" id="00w-gX-FJS">
+                                                        <rect key="frame" x="8" y="62" width="112" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aslan Brewing Co." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7If-Jb-W6O">
+                                                        <rect key="frame" x="128" y="62" width="189" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUY-pJ-CMe">
+                                                        <rect key="frame" x="8" y="144" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Founded in 2012, Aslan has quickly become a feature of Bellingham’s growing craft beer scene. Located on the corner of Forest and Magnolia in downtown Bellingham, Aslan Brewing Co. offers organic brew along with its expansive food menu. An energetic and dynamic brewpub, Aslan is the perfect place to grab a couple beers or sit down for a family dinner.</string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0g-0I-xEc">
+                                                        <rect key="frame" x="140" y="276" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="aslanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="HLk-K4-2dp"/>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="HIE-Zt-rgf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1330 N Forest St, Bellingham, WA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTY-sg-c4W">
+                                                        <rect key="frame" x="128" y="93" width="199" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(360) 778-2088" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEj-AU-e0s">
+                                                        <rect key="frame" x="177" y="116" width="92" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boundarybaylogo" translatesAutoresizingMaskIntoConstraints="NO" id="oOZ-C9-b9D">
+                                                        <rect key="frame" x="23" y="316" width="84" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Boundary Bay Brewery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50a-qN-hzE">
+                                                        <rect key="frame" x="110" y="316" width="226" height="22"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="19"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0SK-nH-wdw">
+                                                        <rect key="frame" x="9" y="398" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Boundary Bay Brewery houses a Taproom, with 15 taps and two cask engines, and family-friendly Bistro, located in a restored historic 1922 warehouse in Downtown Bellingham, across from the Saturday Farmer’s Market. During the warmer months enjoy outdoor seating on the deck and a Beer Garden, where you can enjoy BBQ’s, outdoor concerts and nonprofit events.</string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYz-92-dav">
+                                                        <rect key="frame" x="140" y="531" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="aslanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="6h0-Vf-4fN"/>
+                                                            <action selector="boundaryBayLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="rBY-mE-fJm"/>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="eGJ-A0-CKM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1107 W Railroad Ave, Bellingham, WA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADz-UZ-kRW">
+                                                        <rect key="frame" x="112" y="346" width="224" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(360) 778-2088" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gr6-gM-VHD">
+                                                        <rect key="frame" x="178" y="370" width="92" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chuckanutlogo" translatesAutoresizingMaskIntoConstraints="NO" id="5Jl-nL-BE2">
+                                                        <rect key="frame" x="21" y="571" width="87" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chuckanut Brewery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq5-E3-WIj">
+                                                        <rect key="frame" x="120" y="571" width="205" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiK-HK-NaC">
+                                                        <rect key="frame" x="9" y="653" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">When we won Small Brewery/Brewer of the Year 2011 at the GABF it was a confirmation that Chuckanut beers were indeed, some of the best in the nation. Continued awards of medals from the Great American Beer Festival, the World Beer Cup, the North American Beer Awards, and the Washington Beer Awards is an indication that Chuckanut is one of the more awarded breweries in WA State. </string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNK-rh-aH7">
+                                                        <rect key="frame" x="140" y="785" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="aslanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="2W0-gr-ELE"/>
+                                                            <action selector="boundaryBayLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="lvx-63-xzf"/>
+                                                            <action selector="chuckanutLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="553-1S-8iG"/>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="4At-QD-9cM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1330 N Forest St, Bellingham, WA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNF-RZ-eRu">
+                                                        <rect key="frame" x="129" y="602" width="199" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(360) 778-2088" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plr-0g-SDH">
+                                                        <rect key="frame" x="178" y="625" width="92" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grufflogo" translatesAutoresizingMaskIntoConstraints="NO" id="8dg-e8-QwK">
+                                                        <rect key="frame" x="20" y="825" width="89" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gruff Brewing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmR-KE-qlW">
+                                                        <rect key="frame" x="149" y="825" width="148" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woU-jm-RUy">
+                                                        <rect key="frame" x="9" y="907" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Founded in 2012, Aslan has quickly become a feature of Bellingham’s growing craft beer scene. Located on the corner of Forest and Magnolia in downtown Bellingham, Aslan Brewing Co. offers organic brew along with its expansive food menu. An energetic and dynamic brewpub, Aslan is the perfect place to grab a couple beers or sit down for a family dinner.</string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBQ-16-Eew">
+                                                        <rect key="frame" x="141" y="1040" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="aslanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="4a5-k7-4p3"/>
+                                                            <action selector="boundaryBayLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="M8Z-tv-euE"/>
+                                                            <action selector="chuckanutLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="Gll-UY-ddj"/>
+                                                            <action selector="gruffLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="kmT-ji-Ptd"/>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="Vn6-63-Oq9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="104 E Maple St #101, Bellingham, WA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1Z-va-HXT">
+                                                        <rect key="frame" x="113" y="856" width="221" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="www.gruff-brewing.com/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Av-Wu-7NJ">
+                                                        <rect key="frame" x="146" y="879" width="153" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="illuminati" translatesAutoresizingMaskIntoConstraints="NO" id="7G0-7S-Gu0">
+                                                        <rect key="frame" x="18" y="1089" width="90" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Illuminati Brewing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBY-5i-SCk">
+                                                        <rect key="frame" x="129" y="1089" width="197" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeY-SZ-j6G">
+                                                        <rect key="frame" x="9" y="1171" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Founded in 2012, Aslan has quickly become a feature of Bellingham’s growing craft beer scene. Located on the corner of Forest and Magnolia in downtown Bellingham, Aslan Brewing Co. offers organic brew along with its expansive food menu. An energetic and dynamic brewpub, Aslan is the perfect place to grab a couple beers or sit down for a family dinner.</string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujg-5G-eWd">
+                                                        <rect key="frame" x="141" y="1307" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="aslanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="NPe-FI-aCs"/>
+                                                            <action selector="boundaryBayLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="oki-QX-Qq6"/>
+                                                            <action selector="chuckanutLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="o5u-1f-mk7"/>
+                                                            <action selector="illuminatiLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="U0q-UM-xes"/>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="3V7-WL-iAD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3950 Hammer Dr, Bellingham, WA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU0-ZC-dsT">
+                                                        <rect key="frame" x="120" y="1120" width="207" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(360) 220-7072" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8P-5X-HMf">
+                                                        <rect key="frame" x="178" y="1143" width="91" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kulshan" translatesAutoresizingMaskIntoConstraints="NO" id="3av-8y-xzj">
+                                                        <rect key="frame" x="9" y="1341" width="112" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kulshan Brewing Co." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-7Y-uMj">
+                                                        <rect key="frame" x="120" y="1341" width="217" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rci-7K-E0s">
+                                                        <rect key="frame" x="9" y="1423" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Founded in 2012, Aslan has quickly become a feature of Bellingham’s growing craft beer scene. Located on the corner of Forest and Magnolia in downtown Bellingham, Aslan Brewing Co. offers organic brew along with its expansive food menu. An energetic and dynamic brewpub, Aslan is the perfect place to grab a couple beers or sit down for a family dinner.</string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yv-Re-nme">
+                                                        <rect key="frame" x="141" y="1554" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="aslanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="qUs-OY-r7m"/>
+                                                            <action selector="boundaryBayLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="ng0-3W-h4M"/>
+                                                            <action selector="chuckanutLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="PFA-OB-q6m"/>
+                                                            <action selector="kulshanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="bbS-Vu-bG8"/>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="ZSn-d0-sc3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2238 James St, Bellingham, WA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYs-eK-IYE">
+                                                        <rect key="frame" x="134" y="1372" width="187" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(360) 389-5348" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVd-Wo-Aig">
+                                                        <rect key="frame" x="181" y="1395" width="92" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menace" translatesAutoresizingMaskIntoConstraints="NO" id="hUg-JK-dgJ">
+                                                        <rect key="frame" x="9" y="1594" width="112" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menace Brewing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnX-hh-6LD">
+                                                        <rect key="frame" x="137" y="1594" width="172" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IO6-y7-sMe">
+                                                        <rect key="frame" x="9" y="1676" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Founded in 2012, Aslan has quickly become a feature of Bellingham’s growing craft beer scene. Located on the corner of Forest and Magnolia in downtown Bellingham, Aslan Brewing Co. offers organic brew along with its expansive food menu. An energetic and dynamic brewpub, Aslan is the perfect place to grab a couple beers or sit down for a family dinner.</string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2529 Meridian St, Bellingham, WA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKr-zl-cqy">
+                                                        <rect key="frame" x="122" y="1625" width="204" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(360) 306-3457" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivt-Id-UQb">
+                                                        <rect key="frame" x="178" y="1648" width="91" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stones Throw Brewing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcA-NL-QWr">
+                                                        <rect key="frame" x="117" y="1847" width="222" height="22"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="19"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m55-qm-R53">
+                                                        <rect key="frame" x="9" y="1929" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Founded in 2012, Aslan has quickly become a feature of Bellingham’s growing craft beer scene. Located on the corner of Forest and Magnolia in downtown Bellingham, Aslan Brewing Co. offers organic brew along with its expansive food menu. An energetic and dynamic brewpub, Aslan is the perfect place to grab a couple beers or sit down for a family dinner.</string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHz-oX-lsl">
+                                                        <rect key="frame" x="141" y="2063" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="aslanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="m04-nh-w8t"/>
+                                                            <action selector="boundaryBayLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="F4j-NF-5ub"/>
+                                                            <action selector="chuckanutLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="YXq-mx-uF6"/>
+                                                            <action selector="stonesLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="xW3-Nh-32V"/>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="pPe-sX-dhG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1009 Larrabee Ave, Bellingham, WA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0Y-js-3BI">
+                                                        <rect key="frame" x="121" y="1878" width="214" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(360) 362-5058" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcf-i2-EzL">
+                                                        <rect key="frame" x="176" y="1901" width="92" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="structure" translatesAutoresizingMaskIntoConstraints="NO" id="EwL-7K-WFx">
+                                                        <rect key="frame" x="17" y="2111" width="91" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Structures Brewing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6R-cl-SCC">
+                                                        <rect key="frame" x="123" y="2111" width="201" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfE-4U-jno">
+                                                        <rect key="frame" x="8" y="2193" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Founded in 2012, Aslan has quickly become a feature of Bellingham’s growing craft beer scene. Located on the corner of Forest and Magnolia in downtown Bellingham, Aslan Brewing Co. offers organic brew along with its expansive food menu. An energetic and dynamic brewpub, Aslan is the perfect place to grab a couple beers or sit down for a family dinner.</string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8X-Vc-w19">
+                                                        <rect key="frame" x="141" y="2323" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="aslanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="j7P-qb-tuJ"/>
+                                                            <action selector="boundaryBayLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="Y6B-zt-Co1"/>
+                                                            <action selector="chuckanutLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="Kud-RQ-s2c"/>
+                                                            <action selector="structuresLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="ZSc-OF-HW9"/>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="ozq-hi-4Cq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1420 N State St, Bellingham, WA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tx5-5b-G0N">
+                                                        <rect key="frame" x="128" y="2142" width="192" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(360) 582-7475" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY4-Zj-qUy">
+                                                        <rect key="frame" x="177" y="2165" width="90" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wander" translatesAutoresizingMaskIntoConstraints="NO" id="sJU-d6-hXv">
+                                                        <rect key="frame" x="9" y="2363" width="112" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xS-lZ-ZZl">
+                                                        <rect key="frame" x="9" y="2445" width="324" height="174"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Founded in 2012, Aslan has quickly become a feature of Bellingham’s growing craft beer scene. Located on the corner of Forest and Magnolia in downtown Bellingham, Aslan Brewing Co. offers organic brew along with its expansive food menu. An energetic and dynamic brewpub, Aslan is the perfect place to grab a couple beers or sit down for a family dinner.</string>
+                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1807 Dean Ave, Bellingham, WA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnA-in-xtv">
+                                                        <rect key="frame" x="129" y="2394" width="189" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(360) 647-6152" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbj-MY-svm">
+                                                        <rect key="frame" x="178" y="2417" width="89" height="15"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wander Brewing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCw-MC-DPe">
+                                                        <rect key="frame" x="136" y="2363" width="176" height="23"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breweries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MF4-bk-66z">
+                                                        <rect key="frame" x="10" y="8" width="321" height="42"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="35"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="2" height="2"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stonesthrow" translatesAutoresizingMaskIntoConstraints="NO" id="daj-iT-ijZ">
+                                                        <rect key="frame" x="19" y="1847" width="92" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlG-g2-ex7">
+                                                        <rect key="frame" x="141" y="1807" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="aslanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="zzO-Ed-OqD"/>
+                                                            <action selector="boundaryBayLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="MrF-a4-Xtj"/>
+                                                            <action selector="chuckanutLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="mo7-1f-0uB"/>
+                                                            <action selector="menaceLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="mQd-ak-Pmd"/>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="740-7n-7dD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQy-Tw-eUO">
+                                                        <rect key="frame" x="141" y="2579" width="61" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="17"/>
+                                                        <state key="normal" title="Website"/>
+                                                        <connections>
+                                                            <action selector="aslanLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="hpQ-9Z-x9b"/>
+                                                            <action selector="boundaryBayLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="WHS-kN-65o"/>
+                                                            <action selector="chuckanutLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="tWp-CQ-n7a"/>
+                                                            <action selector="wanderLink:" destination="qR8-Le-DhX" eventType="touchUpInside" id="9tw-t7-rMM"/>
+                                                            <action selector="websiteButton1:" destination="Y82-w8-Fgo" eventType="touchUpInside" id="FM6-hY-80W"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="Uez-fg-bvi" firstAttribute="centerX" secondItem="0K8-eT-hom" secondAttribute="centerX" id="47P-IQ-zbv"/>
+                                                    <constraint firstItem="jCV-YE-BlP" firstAttribute="top" secondItem="Uez-fg-bvi" secondAttribute="bottom" constant="1289" id="ACY-zw-2Tp"/>
+                                                    <constraint firstItem="Uez-fg-bvi" firstAttribute="top" secondItem="0K8-eT-hom" secondAttribute="top" constant="8" id="F5c-c1-YLt"/>
+                                                    <constraint firstItem="wbB-g9-gUb" firstAttribute="centerX" secondItem="0K8-eT-hom" secondAttribute="centerX" id="UUf-BE-VfR"/>
+                                                    <constraint firstItem="wbB-g9-gUb" firstAttribute="top" secondItem="jCV-YE-BlP" secondAttribute="bottom" constant="1288" id="WD5-Xi-CK7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wbB-g9-gUb" secondAttribute="bottom" constant="8" id="idH-TH-Wnl"/>
+                                                    <constraint firstItem="jCV-YE-BlP" firstAttribute="centerX" secondItem="0K8-eT-hom" secondAttribute="centerX" id="qKc-x4-6zL"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="0K8-eT-hom" firstAttribute="height" secondItem="P5H-Tc-fqI" secondAttribute="height" priority="250" id="3TR-Qu-Pph"/>
+                                            <constraint firstItem="0K8-eT-hom" firstAttribute="top" secondItem="P5H-Tc-fqI" secondAttribute="top" id="Abj-Iw-wFV"/>
+                                            <constraint firstAttribute="bottom" secondItem="0K8-eT-hom" secondAttribute="bottom" id="UFQ-J3-JBj"/>
+                                            <constraint firstItem="0K8-eT-hom" firstAttribute="width" secondItem="P5H-Tc-fqI" secondAttribute="width" id="VRd-JC-qdG"/>
+                                            <constraint firstAttribute="trailing" secondItem="0K8-eT-hom" secondAttribute="trailing" id="cGI-jT-glp"/>
+                                            <constraint firstItem="0K8-eT-hom" firstAttribute="leading" secondItem="P5H-Tc-fqI" secondAttribute="leading" id="rL5-Un-nEW"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="P5H-Tc-fqI" secondAttribute="trailing" id="A3x-Oy-HVq"/>
+                                    <constraint firstItem="P5H-Tc-fqI" firstAttribute="top" secondItem="7Yt-FD-kdH" secondAttribute="top" id="IvD-iK-Owd"/>
+                                    <constraint firstAttribute="bottom" secondItem="P5H-Tc-fqI" secondAttribute="bottom" id="Kwt-22-jLE"/>
+                                    <constraint firstItem="P5H-Tc-fqI" firstAttribute="leading" secondItem="7Yt-FD-kdH" secondAttribute="leading" id="LCV-sI-ZOF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46666666670000001" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Yt-FD-kdH" firstAttribute="top" secondItem="lA5-yw-HzX" secondAttribute="bottom" constant="8" id="1I4-CQ-8FN"/>
+                            <constraint firstItem="7Yt-FD-kdH" firstAttribute="leading" secondItem="REF-Le-ds7" secondAttribute="leading" constant="16" id="2c0-Zq-xd2"/>
+                            <constraint firstItem="REF-Le-ds7" firstAttribute="trailing" secondItem="lA5-yw-HzX" secondAttribute="trailing" constant="28" id="3Zs-ik-9z3"/>
+                            <constraint firstItem="lA5-yw-HzX" firstAttribute="top" secondItem="REF-Le-ds7" secondAttribute="top" constant="22" id="3qf-Ma-meI"/>
+                            <constraint firstItem="7Yt-FD-kdH" firstAttribute="bottom" secondItem="REF-Le-ds7" secondAttribute="bottom" id="bGt-aB-gB3"/>
+                            <constraint firstItem="REF-Le-ds7" firstAttribute="trailing" secondItem="7Yt-FD-kdH" secondAttribute="trailing" constant="16" id="p5X-0j-mpJ"/>
+                            <constraint firstItem="lA5-yw-HzX" firstAttribute="leading" secondItem="REF-Le-ds7" secondAttribute="leading" constant="28" id="vIB-r0-QbW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="REF-Le-ds7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="BREWS" image="trophy-1" id="Yvx-iR-PAG"/>
+                    <size key="freeformSize" width="375" height="2800"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiP-7h-u77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3596" y="1003.8980509745128"/>
+        </scene>
+        <!--PASSPORT-->
+        <scene sceneID="Zce-QM-i26">
+            <objects>
+                <viewController id="Uwt-I9-hF9" customClass="PassportViewController" customModule="brewsCruise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zCW-gQ-G0i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ki7-ou-iiQ">
+                                <rect key="frame" x="16" y="94" width="343" height="1357"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dnw-x9-iOi">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="1357"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijD-tl-DGu" userLabel="Content View">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="1357"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNp-iO-BpM">
+                                                        <rect key="frame" x="154.5" y="8" width="34" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIDDLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxc-i5-qzt">
+                                                        <rect key="frame" x="140.5" y="668" width="62" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTOM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckg-Fp-Mcz">
+                                                        <rect key="frame" x="136" y="1328" width="71" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boundarybaylogo" translatesAutoresizingMaskIntoConstraints="NO" id="kvn-Nw-dxZ">
+                                                        <rect key="frame" x="42" y="172" width="105" height="101"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chuckanutlogo" translatesAutoresizingMaskIntoConstraints="NO" id="ERv-NP-VyQ">
+                                                        <rect key="frame" x="51" y="288" width="87" height="92"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grufflogo" translatesAutoresizingMaskIntoConstraints="NO" id="WB9-Qo-FmB">
+                                                        <rect key="frame" x="49" y="400" width="91" height="94"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stamppad" translatesAutoresizingMaskIntoConstraints="NO" id="WpD-iZ-uL1">
+                                                        <rect key="frame" x="217" y="71" width="74" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aslanlogo" translatesAutoresizingMaskIntoConstraints="NO" id="GNR-3G-x1u">
+                                                        <rect key="frame" x="42" y="71" width="107" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="illuminati" translatesAutoresizingMaskIntoConstraints="NO" id="tdl-1D-F87">
+                                                        <rect key="frame" x="48" y="540" width="90" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kulshan" translatesAutoresizingMaskIntoConstraints="NO" id="3Vd-Cv-TRw">
+                                                        <rect key="frame" x="37" y="662" width="112" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menace" translatesAutoresizingMaskIntoConstraints="NO" id="Hoo-l4-wUf">
+                                                        <rect key="frame" x="39" y="790" width="112" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stonesthrow" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-TG-diy">
+                                                        <rect key="frame" x="44" y="914" width="100" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="structure" translatesAutoresizingMaskIntoConstraints="NO" id="xOH-i0-Pew">
+                                                        <rect key="frame" x="49" y="1046" width="91" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wander" translatesAutoresizingMaskIntoConstraints="NO" id="tkg-9i-xHp">
+                                                        <rect key="frame" x="39" y="1170" width="112" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stamppad" translatesAutoresizingMaskIntoConstraints="NO" id="8Yj-Hp-THj">
+                                                        <rect key="frame" x="217" y="172" width="74" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stamppad" translatesAutoresizingMaskIntoConstraints="NO" id="O1L-3r-oHa">
+                                                        <rect key="frame" x="217" y="285" width="74" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stamppad" translatesAutoresizingMaskIntoConstraints="NO" id="3u8-un-DV8">
+                                                        <rect key="frame" x="217" y="398" width="74" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stamppad" translatesAutoresizingMaskIntoConstraints="NO" id="5qJ-eq-Kk6">
+                                                        <rect key="frame" x="217" y="532" width="74" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stamppad" translatesAutoresizingMaskIntoConstraints="NO" id="eH4-MC-yzk">
+                                                        <rect key="frame" x="217" y="654" width="74" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stamppad" translatesAutoresizingMaskIntoConstraints="NO" id="Gtd-Cg-gEo">
+                                                        <rect key="frame" x="217" y="777" width="74" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stamppad" translatesAutoresizingMaskIntoConstraints="NO" id="Qc0-lm-64b">
+                                                        <rect key="frame" x="217" y="911" width="74" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stamppad" translatesAutoresizingMaskIntoConstraints="NO" id="FGD-sV-dfA">
+                                                        <rect key="frame" x="217" y="1038" width="74" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stamppad" translatesAutoresizingMaskIntoConstraints="NO" id="y6v-1p-w26">
+                                                        <rect key="frame" x="217" y="1162" width="74" height="73"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Passport" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBv-My-jex">
+                                                        <rect key="frame" x="11" y="8" width="321" height="42"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="35"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="2" height="2"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beerstamp" translatesAutoresizingMaskIntoConstraints="NO" id="5m5-QM-uVt">
+                                                        <rect key="frame" x="224" y="77" width="60" height="60"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="WNp-iO-BpM" firstAttribute="centerX" secondItem="ijD-tl-DGu" secondAttribute="centerX" id="DKa-cq-DVL"/>
+                                                    <constraint firstItem="mxc-i5-qzt" firstAttribute="top" secondItem="WNp-iO-BpM" secondAttribute="bottom" constant="639" id="Gtp-mt-ndB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ckg-Fp-Mcz" secondAttribute="bottom" constant="8" id="VGS-wx-QSk"/>
+                                                    <constraint firstItem="Ckg-Fp-Mcz" firstAttribute="centerX" secondItem="ijD-tl-DGu" secondAttribute="centerX" id="c6T-XG-HDe"/>
+                                                    <constraint firstItem="mxc-i5-qzt" firstAttribute="centerX" secondItem="ijD-tl-DGu" secondAttribute="centerX" id="d3H-EB-e18"/>
+                                                    <constraint firstItem="Ckg-Fp-Mcz" firstAttribute="top" secondItem="mxc-i5-qzt" secondAttribute="bottom" constant="639" id="t16-Hd-gau"/>
+                                                    <constraint firstItem="WNp-iO-BpM" firstAttribute="top" secondItem="ijD-tl-DGu" secondAttribute="top" constant="8" id="wr1-vg-Hof"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ijD-tl-DGu" firstAttribute="leading" secondItem="Dnw-x9-iOi" secondAttribute="leading" id="42l-ic-IPP"/>
+                                            <constraint firstItem="ijD-tl-DGu" firstAttribute="height" secondItem="Dnw-x9-iOi" secondAttribute="height" priority="250" id="IvA-ma-yQ5"/>
+                                            <constraint firstItem="ijD-tl-DGu" firstAttribute="top" secondItem="Dnw-x9-iOi" secondAttribute="top" id="QpE-Lb-Ghb"/>
+                                            <constraint firstAttribute="bottom" secondItem="ijD-tl-DGu" secondAttribute="bottom" id="ceg-2q-bud"/>
+                                            <constraint firstAttribute="trailing" secondItem="ijD-tl-DGu" secondAttribute="trailing" id="iUr-kD-Ga2"/>
+                                            <constraint firstItem="ijD-tl-DGu" firstAttribute="width" secondItem="Dnw-x9-iOi" secondAttribute="width" id="qFt-5c-gqg"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Dnw-x9-iOi" secondAttribute="trailing" id="Ywn-s0-mBn"/>
+                                    <constraint firstItem="Dnw-x9-iOi" firstAttribute="top" secondItem="Ki7-ou-iiQ" secondAttribute="top" id="fED-hJ-kwc"/>
+                                    <constraint firstItem="Dnw-x9-iOi" firstAttribute="leading" secondItem="Ki7-ou-iiQ" secondAttribute="leading" id="h48-pa-MBG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dnw-x9-iOi" secondAttribute="bottom" id="rHD-zD-nyz"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="enI-aB-i3A">
+                                <rect key="frame" x="28" y="41" width="319" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="EQL-AT-yfI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46666666670000001" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="enI-aB-i3A" firstAttribute="top" secondItem="Ejy-95-qvy" secondAttribute="top" constant="21" id="1Z9-Ah-qJN"/>
+                            <constraint firstItem="Ejy-95-qvy" firstAttribute="trailing" secondItem="Ki7-ou-iiQ" secondAttribute="trailing" constant="16" id="KdT-NL-cg7"/>
+                            <constraint firstItem="enI-aB-i3A" firstAttribute="leading" secondItem="Ejy-95-qvy" secondAttribute="leading" constant="28" id="d1q-9W-XPq"/>
+                            <constraint firstItem="Ki7-ou-iiQ" firstAttribute="bottom" secondItem="Ejy-95-qvy" secondAttribute="bottom" id="e08-iY-ssw"/>
+                            <constraint firstItem="Ki7-ou-iiQ" firstAttribute="top" secondItem="enI-aB-i3A" secondAttribute="bottom" constant="8" id="h5R-bu-Wfg"/>
+                            <constraint firstItem="Ki7-ou-iiQ" firstAttribute="leading" secondItem="Ejy-95-qvy" secondAttribute="leading" constant="16" id="hEm-K4-fwU"/>
+                            <constraint firstItem="Ejy-95-qvy" firstAttribute="trailing" secondItem="enI-aB-i3A" secondAttribute="trailing" constant="28" id="uni-6R-F9w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ejy-95-qvy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PASSPORT" image="wallet_app-1" id="kCY-gX-Kyh"/>
+                    <size key="freeformSize" width="375" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZG-dH-F5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5056.8000000000002" y="419.19040479760122"/>
+        </scene>
+        <!--MAP-->
+        <scene sceneID="wGW-Fr-y2g">
+            <objects>
+                <viewController id="wPB-mN-3dg" customClass="MapViewController" customModule="brewsCruise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcV-du-f3F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dBk-38-B7e">
+                                <rect key="frame" x="28" y="20" width="319" height="45"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pj6-lp-tDe">
+                                <rect key="frame" x="16" y="73" width="343" height="521"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4j-cY-sbH">
+                                        <rect key="frame" x="11" y="8" width="321" height="42"/>
+                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="2" height="2"/>
+                                    </label>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8Fh-27-nNw">
+                                        <rect key="frame" x="8" y="58" width="327" height="455"/>
+                                    </mapView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.90196078430000004" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="p4j-cY-sbH" secondAttribute="trailing" constant="11" id="9NY-i8-NpC"/>
+                                    <constraint firstItem="8Fh-27-nNw" firstAttribute="bottom" secondItem="pj6-lp-tDe" secondAttribute="bottomMargin" id="9dW-Y7-5ox"/>
+                                    <constraint firstItem="8Fh-27-nNw" firstAttribute="top" secondItem="p4j-cY-sbH" secondAttribute="bottom" constant="8" id="MmT-6U-KV6"/>
+                                    <constraint firstItem="8Fh-27-nNw" firstAttribute="leading" secondItem="pj6-lp-tDe" secondAttribute="leadingMargin" id="lyb-dC-BOf"/>
+                                    <constraint firstItem="8Fh-27-nNw" firstAttribute="centerX" secondItem="p4j-cY-sbH" secondAttribute="centerX" id="oE7-Ks-BUT"/>
+                                    <constraint firstItem="p4j-cY-sbH" firstAttribute="leading" secondItem="pj6-lp-tDe" secondAttribute="leading" constant="11" id="p8v-Pw-92g"/>
+                                    <constraint firstItem="p4j-cY-sbH" firstAttribute="top" secondItem="pj6-lp-tDe" secondAttribute="top" constant="8" id="zCE-VP-U4O"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46666666670000001" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pj6-lp-tDe" firstAttribute="top" secondItem="dBk-38-B7e" secondAttribute="bottom" constant="8" symbolic="YES" id="1ka-zE-Ow0"/>
+                            <constraint firstItem="pj6-lp-tDe" firstAttribute="centerX" secondItem="dBk-38-B7e" secondAttribute="centerX" id="4Zi-Ro-sol"/>
+                            <constraint firstItem="6eR-uV-dfz" firstAttribute="bottom" secondItem="pj6-lp-tDe" secondAttribute="bottom" constant="24" id="GPN-9Y-7fu"/>
+                            <constraint firstItem="pj6-lp-tDe" firstAttribute="leading" secondItem="vcV-du-f3F" secondAttribute="leadingMargin" id="QJe-Bs-CYZ"/>
+                            <constraint firstItem="pj6-lp-tDe" firstAttribute="trailing" secondItem="vcV-du-f3F" secondAttribute="trailingMargin" id="b6Q-Y5-Sly"/>
+                            <constraint firstItem="pj6-lp-tDe" firstAttribute="centerY" secondItem="vcV-du-f3F" secondAttribute="centerY" id="svO-iL-g2v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6eR-uV-dfz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MAP" image="map_marker-1" id="4ph-cc-0qx"/>
+                    <connections>
+                        <outlet property="mapView" destination="8Fh-27-nNw" id="BIN-hj-oDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2m-op-gtb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5808.8000000000002" y="44.527736131934034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="about-2" width="30" height="30"/>
+        <image name="aslanlogo" width="400" height="250"/>
+        <image name="beerstamp" width="799" height="800"/>
+        <image name="boundarybaylogo" width="358" height="358"/>
+        <image name="chuckanutlogo" width="293" height="313"/>
+        <image name="define_location" width="30" height="30"/>
+        <image name="dtsounds" width="750" height="602"/>
+        <image name="gruff" width="1436" height="928"/>
+        <image name="grufflogo" width="310" height="310"/>
+        <image name="home-1" width="30" height="30"/>
+        <image name="illuminati" width="332" height="332"/>
+        <image name="kulshan" width="338" height="234"/>
+        <image name="logo" width="1146" height="150"/>
+        <image name="map_marker-1" width="30" height="30"/>
+        <image name="menace" width="320" height="202"/>
+        <image name="mountains" width="374" height="138"/>
+        <image name="schweinlogo" width="258" height="256"/>
+        <image name="stamppad" width="480" height="480"/>
+        <image name="stonesthrow" width="338" height="338"/>
+        <image name="structure" width="314" height="314"/>
+        <image name="trophy-1" width="30" height="30"/>
+        <image name="twinsisters" width="258" height="118"/>
+        <image name="wallet_app-1" width="30" height="30"/>
+        <image name="wander" width="338" height="214"/>
+    </resources>
+</document>
