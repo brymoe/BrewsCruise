@@ -8,7 +8,9 @@
 import UIKit
 
 class PassportViewController: UIViewController {
-
+    
+    @IBOutlet weak var aslanStamp: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

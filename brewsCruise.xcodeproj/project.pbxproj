@@ -10,32 +10,62 @@
 		140A8B1A20EAEF7A004A1F59 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A8B1920EAEF7A004A1F59 /* MenuViewController.swift */; };
 		140A8B1C20EAEFF5004A1F59 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A8B1B20EAEFF5004A1F59 /* AboutViewController.swift */; };
 		140A8B1E20EAF013004A1F59 /* BreweriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A8B1D20EAF013004A1F59 /* BreweriesViewController.swift */; };
-		140A8B2020EAF02A004A1F59 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A8B1F20EAF02A004A1F59 /* ScannerViewController.swift */; };
 		140A8B2220EAF046004A1F59 /* PassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A8B2120EAF046004A1F59 /* PassportViewController.swift */; };
 		140A8B2420EAF061004A1F59 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A8B2320EAF061004A1F59 /* MapViewController.swift */; };
+		140BCB7B20F3FB6800E4353D /* toolkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140BCB7A20F3FB6800E4353D /* toolkit.swift */; };
+		140BCB7F20F40FB800E4353D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140BCB7E20F40FB800E4353D /* EventsViewController.swift */; };
+		140BCB8120F41BCF00E4353D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140BCB8020F41BCC00E4353D /* Assets.xcassets */; };
 		1441DF4020E94F2900FB9076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441DF3F20E94F2900FB9076 /* AppDelegate.swift */; };
 		1441DF4220E94F2900FB9076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441DF4120E94F2900FB9076 /* ViewController.swift */; };
 		1441DF4520E94F2900FB9076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1441DF4320E94F2900FB9076 /* Main.storyboard */; };
-		1441DF4720E94F2900FB9076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1441DF4620E94F2900FB9076 /* Assets.xcassets */; };
 		1441DF4A20E94F2900FB9076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1441DF4820E94F2900FB9076 /* LaunchScreen.storyboard */; };
+		14B3F4042112564400660231 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14B3F4032112564300660231 /* GoogleService-Info.plist */; };
+		14D2829220F839AF00C70CD1 /* BoundaryBayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D2829120F839AF00C70CD1 /* BoundaryBayViewController.swift */; };
+		14D2829420F8491F00C70CD1 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D2829320F8491F00C70CD1 /* ScannerViewController.swift */; };
 		14E563BF20EC3B2100DCD1C5 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E563BE20EC3B2100DCD1C5 /* Artwork.swift */; };
+		14EA6ABF210FB47100332BF0 /* AslanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA6ABE210FB47100332BF0 /* AslanViewController.swift */; };
+		14EA6AC3210FC03300332BF0 /* ChuckanutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA6AC2210FC03300332BF0 /* ChuckanutViewController.swift */; };
+		14EA6AC52110E94700332BF0 /* GruffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA6AC42110E94700332BF0 /* GruffViewController.swift */; };
+		14EA6AC72110F0BD00332BF0 /* IlluminatiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA6AC62110F0BD00332BF0 /* IlluminatiViewController.swift */; };
+		14EA6AC92110F8AE00332BF0 /* KulshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA6AC82110F8AE00332BF0 /* KulshanViewController.swift */; };
+		14EA6ACB2110F8E300332BF0 /* MenaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA6ACA2110F8E300332BF0 /* MenaceViewController.swift */; };
+		14EA6ACD2110F93600332BF0 /* StonesThrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA6ACC2110F93600332BF0 /* StonesThrowViewController.swift */; };
+		14EA6ACF2110F94900332BF0 /* StructuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA6ACE2110F94900332BF0 /* StructuresViewController.swift */; };
+		14EA6AD12110F95300332BF0 /* WanderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA6AD02110F95300332BF0 /* WanderViewController.swift */; };
+		72EE81403255CAFC7FBDA175 /* Pods_brewsCruise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3064E6A406FFB097B90495F4 /* Pods_brewsCruise.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		140A8B1920EAEF7A004A1F59 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		140A8B1B20EAEFF5004A1F59 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		140A8B1D20EAF013004A1F59 /* BreweriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweriesViewController.swift; sourceTree = "<group>"; };
-		140A8B1F20EAF02A004A1F59 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		140A8B2120EAF046004A1F59 /* PassportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportViewController.swift; sourceTree = "<group>"; };
 		140A8B2320EAF061004A1F59 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		140BCB7A20F3FB6800E4353D /* toolkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = toolkit.swift; path = "../../../../../Downloads/Gradient-View-master/toolkit.swift"; sourceTree = "<group>"; };
+		140BCB7E20F40FB800E4353D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		140BCB8020F41BCC00E4353D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1441DF3C20E94F2900FB9076 /* brewsCruise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brewsCruise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1441DF3F20E94F2900FB9076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1441DF4120E94F2900FB9076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1441DF4420E94F2900FB9076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1441DF4620E94F2900FB9076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1441DF4920E94F2900FB9076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1441DF4B20E94F2900FB9076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B3F4032112564300660231 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		14D2829120F839AF00C70CD1 /* BoundaryBayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundaryBayViewController.swift; sourceTree = "<group>"; };
+		14D2829320F8491F00C70CD1 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		14E563BE20EC3B2100DCD1C5 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		14EA6ABE210FB47100332BF0 /* AslanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AslanViewController.swift; sourceTree = "<group>"; };
+		14EA6AC2210FC03300332BF0 /* ChuckanutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckanutViewController.swift; sourceTree = "<group>"; };
+		14EA6AC42110E94700332BF0 /* GruffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GruffViewController.swift; sourceTree = "<group>"; };
+		14EA6AC62110F0BD00332BF0 /* IlluminatiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlluminatiViewController.swift; sourceTree = "<group>"; };
+		14EA6AC82110F8AE00332BF0 /* KulshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulshanViewController.swift; sourceTree = "<group>"; };
+		14EA6ACA2110F8E300332BF0 /* MenaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenaceViewController.swift; sourceTree = "<group>"; };
+		14EA6ACC2110F93600332BF0 /* StonesThrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StonesThrowViewController.swift; sourceTree = "<group>"; };
+		14EA6ACE2110F94900332BF0 /* StructuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresViewController.swift; sourceTree = "<group>"; };
+		14EA6AD02110F95300332BF0 /* WanderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderViewController.swift; sourceTree = "<group>"; };
+		3064E6A406FFB097B90495F4 /* Pods_brewsCruise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brewsCruise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9451AD13C66D18F3539CB85 /* Pods-brewsCruise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brewsCruise.release.xcconfig"; path = "Pods/Target Support Files/Pods-brewsCruise/Pods-brewsCruise.release.xcconfig"; sourceTree = "<group>"; };
+		D0BF2F41800DCD8A7E74CB9F /* Pods-brewsCruise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brewsCruise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brewsCruise/Pods-brewsCruise.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EE81403255CAFC7FBDA175 /* Pods_brewsCruise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +86,8 @@
 				14E563BE20EC3B2100DCD1C5 /* Artwork.swift */,
 				1441DF3E20E94F2900FB9076 /* brewsCruise */,
 				1441DF3D20E94F2900FB9076 /* Products */,
+				1D802EEE9A9C6ABA03C8E69D /* Pods */,
+				8440C95AA312EA3173ECA77A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,20 +102,50 @@
 		1441DF3E20E94F2900FB9076 /* brewsCruise */ = {
 			isa = PBXGroup;
 			children = (
+				140BCB7A20F3FB6800E4353D /* toolkit.swift */,
 				1441DF3F20E94F2900FB9076 /* AppDelegate.swift */,
 				1441DF4120E94F2900FB9076 /* ViewController.swift */,
 				140A8B1920EAEF7A004A1F59 /* MenuViewController.swift */,
 				140A8B1B20EAEFF5004A1F59 /* AboutViewController.swift */,
 				140A8B1D20EAF013004A1F59 /* BreweriesViewController.swift */,
-				140A8B1F20EAF02A004A1F59 /* ScannerViewController.swift */,
 				140A8B2120EAF046004A1F59 /* PassportViewController.swift */,
+				14D2829320F8491F00C70CD1 /* ScannerViewController.swift */,
 				140A8B2320EAF061004A1F59 /* MapViewController.swift */,
+				140BCB7E20F40FB800E4353D /* EventsViewController.swift */,
+				14EA6ABE210FB47100332BF0 /* AslanViewController.swift */,
+				14D2829120F839AF00C70CD1 /* BoundaryBayViewController.swift */,
+				14EA6AC2210FC03300332BF0 /* ChuckanutViewController.swift */,
+				14EA6AC42110E94700332BF0 /* GruffViewController.swift */,
+				14EA6AC62110F0BD00332BF0 /* IlluminatiViewController.swift */,
+				14EA6AC82110F8AE00332BF0 /* KulshanViewController.swift */,
+				14EA6ACA2110F8E300332BF0 /* MenaceViewController.swift */,
+				14EA6ACC2110F93600332BF0 /* StonesThrowViewController.swift */,
+				14EA6ACE2110F94900332BF0 /* StructuresViewController.swift */,
+				14EA6AD02110F95300332BF0 /* WanderViewController.swift */,
 				1441DF4320E94F2900FB9076 /* Main.storyboard */,
-				1441DF4620E94F2900FB9076 /* Assets.xcassets */,
+				140BCB8020F41BCC00E4353D /* Assets.xcassets */,
+				14B3F4032112564300660231 /* GoogleService-Info.plist */,
 				1441DF4820E94F2900FB9076 /* LaunchScreen.storyboard */,
 				1441DF4B20E94F2900FB9076 /* Info.plist */,
 			);
 			path = brewsCruise;
+			sourceTree = "<group>";
+		};
+		1D802EEE9A9C6ABA03C8E69D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0BF2F41800DCD8A7E74CB9F /* Pods-brewsCruise.debug.xcconfig */,
+				C9451AD13C66D18F3539CB85 /* Pods-brewsCruise.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8440C95AA312EA3173ECA77A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3064E6A406FFB097B90495F4 /* Pods_brewsCruise.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1441DF4E20E94F2900FB9076 /* Build configuration list for PBXNativeTarget "brewsCruise" */;
 			buildPhases = (
+				ED59D4B31EB346CCB1FE702B /* [CP] Check Pods Manifest.lock */,
 				1441DF3820E94F2900FB9076 /* Sources */,
 				1441DF3920E94F2900FB9076 /* Frameworks */,
 				1441DF3A20E94F2900FB9076 /* Resources */,
+				C952DACCF6153A727BC157C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,27 +210,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				1441DF4A20E94F2900FB9076 /* LaunchScreen.storyboard in Resources */,
-				1441DF4720E94F2900FB9076 /* Assets.xcassets in Resources */,
+				14B3F4042112564400660231 /* GoogleService-Info.plist in Resources */,
+				140BCB8120F41BCF00E4353D /* Assets.xcassets in Resources */,
 				1441DF4520E94F2900FB9076 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C952DACCF6153A727BC157C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-brewsCruise/Pods-brewsCruise-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-brewsCruise/Pods-brewsCruise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED59D4B31EB346CCB1FE702B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-brewsCruise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1441DF3820E94F2900FB9076 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EA6ACD2110F93600332BF0 /* StonesThrowViewController.swift in Sources */,
+				14EA6AC72110F0BD00332BF0 /* IlluminatiViewController.swift in Sources */,
 				1441DF4220E94F2900FB9076 /* ViewController.swift in Sources */,
-				140A8B2020EAF02A004A1F59 /* ScannerViewController.swift in Sources */,
 				140A8B1A20EAEF7A004A1F59 /* MenuViewController.swift in Sources */,
+				14EA6ABF210FB47100332BF0 /* AslanViewController.swift in Sources */,
+				14EA6AD12110F95300332BF0 /* WanderViewController.swift in Sources */,
 				140A8B2220EAF046004A1F59 /* PassportViewController.swift in Sources */,
 				140A8B1C20EAEFF5004A1F59 /* AboutViewController.swift in Sources */,
+				14D2829220F839AF00C70CD1 /* BoundaryBayViewController.swift in Sources */,
+				14EA6ACF2110F94900332BF0 /* StructuresViewController.swift in Sources */,
 				1441DF4020E94F2900FB9076 /* AppDelegate.swift in Sources */,
 				140A8B1E20EAF013004A1F59 /* BreweriesViewController.swift in Sources */,
+				14EA6AC52110E94700332BF0 /* GruffViewController.swift in Sources */,
 				14E563BF20EC3B2100DCD1C5 /* Artwork.swift in Sources */,
+				14EA6AC92110F8AE00332BF0 /* KulshanViewController.swift in Sources */,
 				140A8B2420EAF061004A1F59 /* MapViewController.swift in Sources */,
+				14D2829420F8491F00C70CD1 /* ScannerViewController.swift in Sources */,
+				14EA6AC3210FC03300332BF0 /* ChuckanutViewController.swift in Sources */,
+				140BCB7B20F3FB6800E4353D /* toolkit.swift in Sources */,
+				140BCB7F20F40FB800E4353D /* EventsViewController.swift in Sources */,
+				14EA6ACB2110F8E300332BF0 /* MenaceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -254,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -304,6 +427,7 @@
 		};
 		1441DF4F20E94F2900FB9076 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0BF2F41800DCD8A7E74CB9F /* Pods-brewsCruise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +443,7 @@
 		};
 		1441DF5020E94F2900FB9076 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9451AD13C66D18F3539CB85 /* Pods-brewsCruise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
